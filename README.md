@@ -196,6 +196,8 @@ along the way.
   [BD-UN-JB](https://github.com/Gezine/BD-UN-JB).
 - **lapse (Y2JB)** — referenced for the `gpu.js` debug-menu apply
   flow; not the exploit itself (lapse exploits AIO, not `kqueueex`).
+- **Edigax** — help with the multi-core leak implementation, bringing
+  the `cr_ref` leak down from ~2 hours to ~48 minutes.
 - **Claude (Anthropic)** — AI assistant used throughout the port:
   iterative debugging across the worker / Stage 0 saga, D-fix
   identification, host-noise gate, public release packaging.
