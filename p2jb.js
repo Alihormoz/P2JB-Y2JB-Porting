@@ -1767,8 +1767,7 @@
                 ", need master_rfd <= " + MAX_MASTER_RFD + ") - host noisy, " +
                 "restart YouTube, wait longer, retry. Kernel UNTOUCHED.");
         }*/
-        await ulog("host OK - starting ~2 hour leak; no further log output " +
-            "until stage 0 (this is normal, do not interrupt)");
+        await ulog("host OK - starting 4-core leak (~45-55 min); no further log output until stage 0 (this is normal, do not interrupt)");
 
         setup_workers(S);
         setup_ipv6_spray(S);
