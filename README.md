@@ -75,17 +75,7 @@ Copy `elfldr_1320.elf` to the root of your USB drive (FAT32 or exFAT),
 exactly as `/elfldr_1320.elf`. Plug it into the PS5 before launching
 the payload.
 
-### 2. Launch the YouTube app on the PS5 and wait
-
-When the YouTube UI loads, **dismiss any popups / prompts** that appear.
-Then **wait at least 60
-seconds** before sending the payload — preferably more. This payload
-reads kernel fd numbers as a host-noise signal and aborts cleanly if
-the YouTube host is still busy with startup work or with a popup
-keeping the UI active. Waiting longer = quieter host = a higher chance
-of passing the pre-flight gate.
-
-### 3. Send the payload
+### 2. Send the payload
 
 From the PC:
 
@@ -103,7 +93,7 @@ kernel panics later on. If `master` is above 34, close YouTube
 (Options → Close application), reopen it, wait longer this time, and
 retry from step 2.
 
-### 4. Wait ~50 minutes
+### 3. Wait ~50 minutes
 
 The cr_ref leak dominates the runtime. The payload sender will stay
 silent for the whole leak — no per-percentage progress is printed.
@@ -111,7 +101,7 @@ Don't assume it has crashed; the worker is internally checked for
 liveness and a stall would surface as a `FATAL` log line. Do not
 interact with the PS5 while it runs.
 
-### 5. Look for completion
+### 4. Look for completion
 
 ```
 [p2jb] stage_elfldr: daemon should be listening on :9021
