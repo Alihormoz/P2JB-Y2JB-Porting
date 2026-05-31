@@ -63,7 +63,7 @@ it means that the jailbreak is succesfull.
 At this point you have an in-memory jailbreak and a generic ELF loader.
 Any ELF (for example [Kstuff](https://github.com/EchoStretch/kstuff-lite) by [EchoStretch](https://github.com/EchoStretch)) you send to `:9021` will run on the jailbroken PS5.
 
-### Sending [Kstuff](https://github.com/EchoStretch/kstuff-lite) to `:9021`
+### 4. Sending [Kstuff](https://github.com/EchoStretch/kstuff-lite) to `:9021`
 
 to send [Kstuff](https://github.com/EchoStretch/kstuff-lite) to your ps5 you need to send the payload by the `payload_sender.py` in [Gezine/Y2JB](https://github.com/Gezine/Y2JB) project (not included here).
 
